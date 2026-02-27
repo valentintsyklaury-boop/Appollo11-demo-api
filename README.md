@@ -1,5 +1,5 @@
 # Appollo11-demo-api
-Fullstack Demo API
+Appollo11 Demo API
 
 This is a minimal Node.js API created to simulate a realistic development environment for security testing and DevSecOps demonstrations.
 
