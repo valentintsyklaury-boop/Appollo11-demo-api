@@ -1,21 +1,29 @@
-# Appollo11-demo-api
-Appollo11 Demo API
+🚀 Appollo11 API
 
-This is a minimal Node.js API created to simulate a realistic development environment for security testing and DevSecOps demonstrations.
+Appollo11 is a minimal Node.js API designed to simulate a realistic production environment for DevSecOps and application security lifecycle demonstrations.
 
-The purpose of this repository is to demonstrate:
+This repository exists to demonstrate how modern security tooling should provide visibility across the full software lifecycle:
 
-Dependency scanning (SCA)
+Code → Build → Deploy → Expose
+
+🎯 Purpose
+
+Most teams begin security at the repository level.
+However, risk propagates beyond source code into container images and publicly exposed infrastructure.
+
+Appollo11 is structured to represent a small but production-like service that enables demonstration of:
+
+Dependency vulnerability scanning (SCA)
 
 Static analysis (SAST)
 
 Secret detection
 
-Container image security (via Docker)
+Container image scanning
 
-Surface monitoring once deployed
+Surface / exposure monitoring (once deployed)
 
-Tech Stack
+🛠 Tech Stack
 
 Node.js
 
@@ -23,22 +31,19 @@ Express
 
 Docker
 
-Why This Repo Exists
+🧩 Architecture Overview
 
-In real-world environments, security risks don’t stop at source code.
-This repository is intentionally structured to represent a typical small production API that:
+The application:
 
-Contains third-party dependencies
+Uses third-party npm dependencies
 
-Is containerized for deployment
+Is containerized using Docker
 
-Can be deployed publicly for surface exposure testing
+Can be deployed publicly to simulate production exposure
 
-This allows security platforms to demonstrate full lifecycle visibility:
+This allows testing and demonstration of end-to-end security coverage.
 
-Code → Build → Deploy → Expose
-
-How to Run Locally
+▶ Running Locally
 
 Install dependencies:
 
@@ -46,20 +51,20 @@ npm install
 
 Start server:
 
-node index.js
+npm start
 
 Server runs on port 3000.
 
-Docker
+🐳 Docker
 
-Build the image:
+Build image:
 
-docker build -t fullstack-demo-api .
+docker build -t appollo11-api .
 
-Run:
+Run container:
 
-docker run -p 3000:3000 fullstack-demo-api
+docker run -p 3000:3000 appollo11-api
 
-Security Note
+🔐 Security Disclaimer
 
-This repository is intended for demonstration and security testing purposes only
+This project is intended strictly for demonstration and security testing purposes.
