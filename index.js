@@ -1,14 +1,1 @@
-const express = require("express");
-const app = express();
-
-// Health / root route
-app.get("/", (req, res) => {
-  res.send("Demo API running");
-});
-
-// IMPORTANT: use dynamic port for cloud platforms
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+const express = require("express"); const app = express(); app.get("/", (req, res) => { res.send("Demo API running"); }); app.listen(3000, () => { console.log("Server running on port 3000"); });
