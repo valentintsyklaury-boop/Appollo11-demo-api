@@ -67,4 +67,4 @@ docker run -p 3000:3000 appollo11-api
 
 🔐 Security Disclaimer
 
-This project is intended strictly for demonstration and security testing purposes.
+This project is intended strictly for demonstration and security testing purposes. 
