@@ -19,7 +19,7 @@ Static analysis (SAST)
 
 Secret detection
 
-Container image scanning
+Container image scanning  
 
 Surface / exposure monitoring (once deployed)
 
