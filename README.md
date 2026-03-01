@@ -61,7 +61,7 @@ Build image:
 
 docker build -t appollo11-api .
 
-Run container:
+Run container: 
 
 docker run -p 3000:3000 appollo11-api
 
